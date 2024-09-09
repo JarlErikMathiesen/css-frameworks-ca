@@ -1,0 +1,129 @@
+@import "variables/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: roboto, sans-serif;
+  background-color: map-get($colours, primary);
+}
+
+.navbar {
+  background-color: map-get($colours, secondary);
+
+  &-brand {
+    font-family: Krona one, sans-serif;
+    font-size: 35px;
+    color: map-get($colours, accent);
+
+    &:hover {
+      color: map-get($colours, accent_2);
+    }
+  }
+}
+
+.profile-img {
+  border-radius: 8px;
+}
+
+ul {
+  padding: 0px;
+}
+
+/* container */
+
+.container {
+  height: 100vh;
+}
+
+/* card */
+
+.card {
+  background-color: map-get($colours, third);
+  padding: 20px;
+  border-radius: 8px;
+  color: map-get($colours, secondary);
+}
+
+.card-about {
+  padding-top: 0px;
+  list-style-position: inside;
+}
+
+.card-follow {
+  padding: 4px;
+
+  & img {
+    height: 40px;
+  }
+}
+
+/* Form group */
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 4px;
+  height: calc(1.5em + 0.75rem + 2px);
+}
+
+.form-text {
+  margin-top: 20px;
+}
+
+.form-text a {
+  color: map-get($colours, accent_2);
+  text-decoration: none;
+
+  &:hover {
+    color: map-get($colours, accent_2_hover);
+  }
+}
+
+/* buttons */
+
+.btn-block {
+  width: 100%;
+  display: block;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+select,
+textarea {
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: map-get($colours, accent);
+  border-color: map-get($colours, accent);
+
+  &:hover {
+    background-color: map-get($colours, accent_2);
+    border-color: map-get($colours, accent_2);
+  }
+}
+
+/* Badge Styles */
+
+.badge-primary {
+  background-color: #6a5acd;
+}
+
+.badge-secondary {
+  background-color: #8c8c8c;
+}
+
+.badge-pill {
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+}
