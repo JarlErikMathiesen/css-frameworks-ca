@@ -11933,25 +11933,6 @@ ul {
   color: #cc8400;
 }
 
-/* .form-group {
-  margin-bottom: 15px;
-} */
-/* .form-control {
-  padding: 10px;
-  border-radius: 4px;
-  height: calc(1.5em + 0.75rem + 2px);
-} */
-/* .form-text {
-  margin-top: 20px;
-} */
-/* .form-text a {
-  color: map-get($colours, accent_2);
-  text-decoration: none;
-
-  &:hover {
-    color: map-get($colours, accent_2_hover);
-  }
-} */
 /* buttons */
 .btn-block {
   width: 100%;
