@@ -11846,7 +11846,7 @@ textarea.form-control-lg {
 }
 body {
   font-family: roboto, sans-serif;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   background: linear-gradient(135deg, #d9d9d9 0%, #adadad 50%, #8d8d8d 100%);
   background-attachment: fixed;
   background-size: cover;
@@ -11858,10 +11858,10 @@ body {
 .navbar-brand {
   font-family: "Krona One", sans-serif;
   font-size: 35px;
-  color: #0f006e;
+  color: #1904a0;
 }
 .navbar-brand:hover {
-  color: #FFA500;
+  color: #ffa500;
 }
 .navbar-brand-text {
   font-family: "Roboto", sans-serif;
@@ -11870,7 +11870,7 @@ body {
 
 .menu-items {
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .profile-img {
@@ -11888,21 +11888,26 @@ ul {
 
 /* card */
 .card {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
   color: #888787;
   box-shadow: 5px 5px 5px 6px #888;
-  /* border: #6a6a6a 3px solid; */
 }
-
 .card-about {
   padding-top: 0px;
   list-style-position: inside;
 }
-
+.card-post {
+  min-height: 26em;
+}
+.card-user {
+  min-height: 13em;
+}
 .card-follow {
   padding: 4px;
+  display: flex;
+  align-items: center;
 }
 .card-follow img {
   height: 40px;
@@ -11912,25 +11917,41 @@ ul {
 .form-group {
   margin-bottom: 15px;
 }
-
 .form-control {
   padding: 10px;
   border-radius: 4px;
   height: calc(1.5em + 0.75rem + 2px);
 }
-
 .form-text {
   margin-top: 20px;
 }
-
 .form-text a {
-  color: #FFA500;
+  color: #ffa500;
   text-decoration: none;
 }
 .form-text a:hover {
   color: #cc8400;
 }
 
+/* .form-group {
+  margin-bottom: 15px;
+} */
+/* .form-control {
+  padding: 10px;
+  border-radius: 4px;
+  height: calc(1.5em + 0.75rem + 2px);
+} */
+/* .form-text {
+  margin-top: 20px;
+} */
+/* .form-text a {
+  color: map-get($colours, accent_2);
+  text-decoration: none;
+
+  &:hover {
+    color: map-get($colours, accent_2_hover);
+  }
+} */
 /* buttons */
 .btn-block {
   width: 100%;
@@ -11953,13 +11974,13 @@ textarea {
 
 /* Buttons */
 .btn-primary {
-  background-color: #0f006e;
-  border-color: #0f006e;
+  background-color: #1904a0;
+  border-color: #1904a0;
   box-shadow: 2px 2px 6px 2px #888;
 }
 .btn-primary:hover {
-  background-color: #FFA500;
-  border-color: #FFA500;
+  background-color: #ffa500;
+  border-color: #ffa500;
 }
 
 /* Badge Styles */

@@ -30,7 +30,7 @@ body {
 
 .menu-items {
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .profile-img {
@@ -55,44 +55,55 @@ ul {
   border-radius: 8px;
   color: map-get($colours, secondary);
   box-shadow: 5px 5px 5px 6px #888;
-  /* border: #6a6a6a 3px solid; */
-}
 
-.card-about {
-  padding-top: 0px;
-  list-style-position: inside;
-}
+  &-about {
+    padding-top: 0px;
+    list-style-position: inside;
+  }
 
-.card-follow {
-  padding: 4px;
+  &-post {
+    min-height: 26em;
+  }
 
-  & img {
-    height: 40px;
+  &-user {
+    min-height: 13em;
+  }
+
+  &-follow {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+    }
   }
 }
 
 /* Form group */
 
-.form-group {
-  margin-bottom: 15px;
-}
+.form {
+  &-group {
+    margin-bottom: 15px;
+  }
 
-.form-control {
-  padding: 10px;
-  border-radius: 4px;
-  height: calc(1.5em + 0.75rem + 2px);
-}
+  &-control {
+    padding: 10px;
+    border-radius: 4px;
+    height: calc(1.5em + 0.75rem + 2px);
+  }
 
-.form-text {
-  margin-top: 20px;
-}
+  &-text {
+    margin-top: 20px;
 
-.form-text a {
-  color: map-get($colours, accent_2);
-  text-decoration: none;
+    a {
+      color: map-get($colours, accent_2);
+      text-decoration: none;
 
-  &:hover {
-    color: map-get($colours, accent_2_hover);
+      &:hover {
+        color: map-get($colours, accent_2_hover);
+      }
+    }
   }
 }
 
